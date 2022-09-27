@@ -55,9 +55,9 @@ cd "$WORKSPACE" || exit; pwd
 # that was generated the 16th of September of 2022. 68 corresponds to the job number, which is
 # also a unique identifier. The reports can then be easily stored inside the Jenkins workspace.
 # There is also the possibility to store these tests on the cloud, e.g., one-drive or similar.
-echo "Copy result.xml into Jenkins container"
+echo "Copy results.xml into Jenkins container"
 rm -rf reports; mkdir reports;
-docker cp $CONTAINER_NAME:/home/porepy-tests/pp-tests/tests/functional/reports/results.xml reports/
+docker cp $CONTAINER_NAME:/home/porepy-tests/pp-tests/tests/reports/results.xml reports/
 
 # Clean-up
 echo "Stopping $CONTAINER_NAME"
