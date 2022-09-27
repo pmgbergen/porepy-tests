@@ -1,6 +1,6 @@
 # porepy-tests
 
-This repository contains a collection of files that are necessary to run automated system-level tests for [porepy](https://github.com/pmgbergen/porepy). The tests are run using [Jenkins](https://www.jenkins.io) in a local server.
+This repository contains a collection of files that are necessary to run automated system-level tests for [porepy](https://github.com/pmgbergen/porepy). The tests are run periodically via [Jenkins](https://www.jenkins.io) in a local server.
 
 The repository contains two types of system-level tests:
 * Functional tests
