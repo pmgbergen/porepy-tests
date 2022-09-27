@@ -11,7 +11,7 @@
 # by Varun Kumar G, 2020.
 
 REPOSITORY_NAME="porepy-tests"
-JOB_NAME="functional_tests"
+JOB_NAME="functional"
 IMAGE_NAME="${JOB_NAME}-image"
 CONTAINER_NAME="${JOB_NAME}-container"
 
