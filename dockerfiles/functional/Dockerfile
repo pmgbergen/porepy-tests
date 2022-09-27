@@ -11,6 +11,7 @@ ENV PP_TST=${POREPY_SRC}/tests
 ENV PPTESTS_HOME /home/porepy-tests
 ENV PPTESTS_SRC=${PPTESTS_HOME}/pp-tests
 ENV PPTESTS_TST=${PPTESTS_SRC}/tests
+ENV PPTESTS_FUNCTIONAL=${PPTESTS_TST}/functional
 
 # Step 1: Install git, wget, and bzip2
 RUN apt-get update
@@ -48,7 +49,7 @@ ENV PYTHONPATH $PPTESTS_HOME:$PYTHONPATH
 
 # Step 6: Run tests in porepy-tests
 # Note that this will run all tests available under the tests folder
-WORKDIR ${PPTESTS_TST}
+WORKDIR ${PPTESTS_FUNCTIONAL}
 RUN pytest -v --cov-report term-missing --cache-clear --disable-warnings --junitxml=reports/results.xml || true
 
 # Step 7: Keep the container running after so that we are allowed to copy the resutls
