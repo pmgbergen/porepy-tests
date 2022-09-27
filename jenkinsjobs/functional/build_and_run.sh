@@ -1,10 +1,16 @@
 #!/bin/bash
 
-# This bash script was adapted from:
+# This bash script builds and run a docker image containing porepy and porepy-tests
+# inside the Jenkins docker container. Inside the inner docker image (the one that has a
+# working porepy installation together with the system-level tests in porepy-tests), tests
+# are run and the test reports are copied to the outer container (specifically, in the
+# Jenkins workspace).
+#
+# Credits: This bash script was adapted from:
 # https://medium.com/swlh/build-your-first-automated-test-integration-with-pytest-jenkins-and-docker-ec738ec43955
 # by Varun Kumar G, 2020.
 
-REPOSITORY_NAME="jenkins-testing"
+REPOSITORY_NAME="porepy-tests"
 JOB_NAME="functional_tests"
 IMAGE_NAME="${JOB_NAME}-image"
 CONTAINER_NAME="${JOB_NAME}-container"
@@ -34,12 +40,12 @@ fi
 
 # Build the image and run the container
 echo "Building $IMAGE_NAME and running $CONTAINER_NAME"
-cd $REPOSITORY_PATH  || exit # move to the folder where the Dockerfile lives
-docker build --no-cache -f $DOCKERFILE_PATH/Dockerfile -t $IMAGE_NAME .  # Build image with no caching
+cd "$REPOSITORY_PATH"  || exit # move to the folder where the Dockerfile lives
+docker build --no-cache -f "$DOCKERFILE_PATH/Dockerfile" -t $IMAGE_NAME .  # Build image with no caching
 echo "$IMAGE_NAME succesfully build."
 docker run -d --name $CONTAINER_NAME $IMAGE_NAME  # run in dettached mode
 echo "$CONTAINER_NAME is running."
-cd $WORKSPACE || exit; pwd
+cd "$WORKSPACE" || exit; pwd
 
 # Copy results
 # For the moment, we will not store pytest results. However, this should be straigthforward.
