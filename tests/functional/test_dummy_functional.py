@@ -2,6 +2,11 @@
 This module contains dummy functional tests meant for setting up the testing workflow.
 """
 
+import porepy as pp
+import pytest
+import numpy as np
+
+
 class TestDummy:
 
     def __init__(self):
