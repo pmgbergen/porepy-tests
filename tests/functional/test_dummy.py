@@ -6,7 +6,7 @@ class TestDummy:
     """Create some dummy test"""
 
     def test_one(self):
-        assert 1 + 2 == 2
+        assert 1 + 1 == 2
 
     def test_two(self):
         assert 1 == 1
