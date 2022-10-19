@@ -51,7 +51,8 @@ ENV PYTHONPATH $PPTESTS_HOME:$PYTHONPATH
 # Note that this will run all tests available under the tests folder
 WORKDIR ${PPTESTS_TST}
 RUN ls
-RUN pytest -v --cov-report term-missing --cache-clear --disable-warnings --junitxml=reports/results.xml
+RUN pytest -v --cov-report term-missing --cache-clear --disable-warnings --junitxml=reports/results.xml || true
+RUN echo $?
 
 # Step 7: Keep the container running after so that we are allowed to copy the resutls
 CMD tail -f /dev/null
