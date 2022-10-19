@@ -42,7 +42,7 @@ ENV PYTHONPATH $PP_HOME:$PYTHONPATH
 WORKDIR ${PPTESTS_HOME}
 RUN git clone https://github.com/pmgbergen/porepy-tests.git ${PPTESTS_SRC}
 WORKDIR ${PPTESTS_SRC}
-RUN git checkout experimental
+RUN git checkout main
 
 # Add porepy-tests to the pythonpath. This may or may not be necessary.
 ENV PYTHONPATH $PPTESTS_HOME:$PYTHONPATH
