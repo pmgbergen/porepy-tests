@@ -2,7 +2,7 @@ name: Project Idea
 description: Create an issue containing a new project idea
 title: "[Project Idea]: "
 labels: ["backlog", "help-wanted"]
-asignees:
+assignees:
   - jhabriel
 body:
   - type: markdown
