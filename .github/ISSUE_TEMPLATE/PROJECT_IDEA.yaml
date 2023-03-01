@@ -1,0 +1,19 @@
+name: Project Idea
+description: Create an issue containing a new project idea
+title: "[Project Idea]: "
+labels: ["backlog", "help-wanted"]
+asignees:
+  - jhabriel
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to write this project idea
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
