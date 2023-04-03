@@ -75,8 +75,8 @@ body:
   - type: textarea
     id: taks_lists
     attributes:
-      label: Use task lists to keep track of the progress of the project.
+      label: Use task lists to keep track the project progress
       description: Write the task list (you may edit it later).
-      placeholder: '- [x] My first task.'
+      placeholder: '- [x] My first task. \ - [ ] Second task.'
     validations:
       required: true
