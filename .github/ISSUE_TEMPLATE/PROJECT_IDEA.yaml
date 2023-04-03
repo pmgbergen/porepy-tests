@@ -72,8 +72,11 @@ body:
         - 'No'
     validations:
       required: false
-literal_block:
-  - type: markdown
+  - type: textarea
+    id: taks_lists
     attributes:
-      value: |
-        Hello
+      label: Use task lists to keep track of the progress of the project.
+      descrtipion: Write the task list (you may edit it later).
+      placeholder: '- [x] My first task.'
+    validations:
+      required: true
