@@ -25,8 +25,8 @@ body:
       label: Compatibility
       description: Would the changes introduced by this project be backward-compatible with PorePy ?
       options:
-        - Yes
-        - No
+        - 'Yes'
+        - 'No'
         - I don't know
     validations:
       required: true
