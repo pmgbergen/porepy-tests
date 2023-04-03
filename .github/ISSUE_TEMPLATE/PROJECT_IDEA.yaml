@@ -16,6 +16,6 @@ body:
     attributes:
       label: Description
       description: Provide a brief description of the project
-      placeholder: ex. email@example.com
+      placeholder: Brief description of project.
     validations:
       required: false
