@@ -23,11 +23,11 @@ body:
     id: compatibility
     attributes:
       label: Compatibility
-      description: Would the changes introduced by the project be backward-compatible?
+      description: Would the changes introduced by this project be backward-compatible with PorePy ?
       options:
         - Yes
         - No
-        - I'm not sure
+        - I don't know
     validations:
       required: true
 
