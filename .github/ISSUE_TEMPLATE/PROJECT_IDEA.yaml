@@ -10,7 +10,9 @@ body:
 
         Before creating a new project, please make sure that you are not creating a duplicate of another project. To do so, go to [Issues](https://github.com/pmgbergen/porepy/issues) and filter the issues using the tag `project-backlog`.
 
-        Please, fill out the following fields to create your new project idea.
+        If relevant, set asignees, labels, projects, and milestones on the right.
+
+        We kindly ask you to fill out the following fields to create your new project idea.
   - type: textarea
     id: description
     attributes:
@@ -22,7 +24,7 @@ body:
   - type: dropdown
     id: compatibility
     attributes:
-      label: Compatibility
+      label: Is backward compatible?
       description: Would the changes introduced by this project be backward-compatible with PorePy?
       options:
         - 'Yes'
@@ -33,14 +35,14 @@ body:
   - type: textarea
     id: backward_incompatible
     attributes:
-      label: Backward-incompatible
+      label: If backward-incompatible, what would be broken?
       description: If you answered *No* above. Please, comment which parts PorePy will break.
     validations:
       required: false
   - type: dropdown
     id: help_needed
     attributes:
-      label: Help needed
+      label: Type of user and amount of help
       description: Please provide the amount of help needed for this project.
       options:
         - I am a user, and I will work on my own.
@@ -63,20 +65,15 @@ body:
   - type: dropdown
     id: user_project
     attributes:
-      label: User project
+      label: Would this make a good user meeting project?
       description: (For members of the organization only) Would this project be a good candidate for a user meeting project?
       options:
         - 'Yes'
         - 'No'
     validations:
       required: false
+literal_block:
   - type: markdown
     attributes:
       value: |
-        ## Project task list
-
-        This is the place where the project leader will track the progress of a project using [task lists](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists).
-
-        - [x] First task in the list
-        - [ ] Second task in the list
-        - [ ] And so on and so forth
+        Hello
