@@ -1,19 +1,22 @@
-name: Project Idea
+name: Project
 description: Create an issue containing a new project idea
-title: "[Project Idea]: "
+title: "[Project]: "
 labels: ["backlog", "help-wanted"]
-assignees:
-  - jhabriel
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to write this project idea
+        Thanks for taking the time to write this project idea. Before creating a new
+        project, please make sure that you are not creating a duplicate of another
+        project. To do so, you can go to `issues` and filter using the tag
+        `project-backlog`.
+
+        Please, fill out the following fields to create your new project idea.
   - type: input
-    id: contact
+    id: description
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
+      label: Description
+      description: Provide a brief description of the project
       placeholder: ex. email@example.com
     validations:
       required: false
