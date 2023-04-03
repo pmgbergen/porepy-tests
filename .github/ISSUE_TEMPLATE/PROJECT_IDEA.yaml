@@ -6,16 +6,25 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### Thanks for taking the time to write this project idea.
+        ## Thanks for taking the time to write this project idea.
 
         Before creating a new project, please make sure that you are not creating a duplicate of another project. To do so, go to [Issues](https://github.com/pmgbergen/porepy/issues) and filter the issues using the tag `project-backlog`.
 
         Please, fill out the following fields to create your new project idea.
+  - type: dropdown
+    id: user_type
+    attributes:
+      label: User type
+      description: Please select the one that corresponds to your case.
+      options:
+        - External user
+        - Internal user
+        - Core developer
   - type: textarea
     id: description
     attributes:
-      label: Description
-      description: Plase, provide a brief description of the project.
+      label: Project description
+      description: Please, provide a brief description of the project.
       placeholder: Brief description of the project.
     validations:
       required: true
@@ -23,28 +32,30 @@ body:
     id: compatibility
     attributes:
       label: Compatibility
-      description: Would the changes introduced by this project be backward-compatible with PorePy ?
+      description: Would the changes introduced by this project be backward-compatible with PorePy?
       options:
         - 'Yes'
         - 'No'
+        - Not sure.
     validations:
       required: true
   - type: textarea
     id: backward_incompatible
     attributes:
       label: Backward-incompatible
-      description: If you answered No above. Please, comment on which parts PorePy will break.
+      description: If you answered *No* above. Please, comment which parts PorePy will break.
     validations:
       required: false
   - type: dropdown
-    id: help
+    id: help_needed
     attributes:
-      label: Help
-      description: Please provide the amount of help you will need for this project.
+      label: Help needed
+      description: Please provide the amount of help needed for this project.
       options:
-        - I can do it on my own.
-        - I can do it on my own but with the help of a developer.
-        - I cannot do this project alone, I will need some help.
+        - I am a user, and I will work on my own.
+        - I am a user, and I will need some help.
+        - I am a core developer, and I will work on my own.
+        - I am a core developer, and I will need some help.
     validations:
       requrired: true
   - type: dropdown
@@ -53,7 +64,6 @@ body:
       label: Implementation effort
       description: If possible, provide an estimate of the time-span of this project.
       options:
-        - N/A.
         - Hours.
         - Days.
         - Months.
@@ -72,10 +82,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### Project task list
+        ## Project task list
 
         This is the place where the project leader will track the progress of a project using [task lists](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists).
 
-        - [x] First task in the list.
-        - [] Second task in the list.
-        - [ ] And so on and so forth.
+        - [x] First task in the list
+        - [ ] Second task in the list
+        - [ ] And so on and so forth
