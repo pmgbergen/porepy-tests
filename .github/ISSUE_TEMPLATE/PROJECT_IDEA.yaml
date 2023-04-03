@@ -17,17 +17,17 @@ body:
       label: Description
       description: Plase, provide a brief description of the project.
       placeholder: Brief description of project.
-      #value: "description_filled"
     validations:
       required: true
-  #- type: dropdown
-  #  id: compatibility
-  #  attribtures:
-  #    label: Compatibility
-  #    description: Would the changes introduced by the project be backward-compatible?
-  #      - Yes
-  #      - No
-  #  validations:
-  #    required: true
+  - type: dropdown
+    id: compatibility
+    attribtures:
+      label: Compatibility
+      description: Would the changes introduced by the project be backward-compatible?
+      options:
+        - Yes
+        - No
+    validations:
+      required: true
 
 
