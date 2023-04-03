@@ -1,14 +1,16 @@
 name: Project
 description: Create an issue containing a new project idea
 title: "[Project]: "
-labels: ["backlog", "help-wanted"]
+labels: ["project-backlog", "help-wanted"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to write this project idea. Before creating a new
-        project, please make sure that you are not creating a duplicate of another
-        project. To do so, you can go to `issues` and filter using the tag
+        ### Thanks for taking the time to write this project idea.
+
+        Before creating a new project, please make sure that you are not creating a
+        duplicate of another project. To do so, go to [Issues](https://github
+        .com/pmgbergen/porepy/issues) and filter the issues using the tag
         `project-backlog`.
 
         Please, fill out the following fields to create your new project idea.
