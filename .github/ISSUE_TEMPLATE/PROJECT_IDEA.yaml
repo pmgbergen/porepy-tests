@@ -33,7 +33,7 @@ body:
     id: backward_incompatible
     attributes:
       label: Backward-incompatible
-      description: If you answered No. Please, provide which part(s) of PorePy will break.
+      description: If you answered No above. Please, comment on which parts PorePy will break.
     validations:
       required: false
   - type: dropdown
@@ -50,7 +50,7 @@ body:
   - type: dropdown
     id: implementation_length
     attributes:
-      label: Implementation length
+      label: Implementation effort
       description: If possible, provide an estimate of the time-span of this project.
       options:
         - N/A.
@@ -63,9 +63,19 @@ body:
     id: user_project
     attributes:
       label: User project
-      description: (For members of the organization only) Would this project be a good candidate for a user meeting project?
+      description: [For members of the organization only] Would this project be a good candidate for a user meeting project?
       options:
         - 'Yes'
         - 'No'
     validations:
       required: false
+  - type: markdown
+    attributes:
+      value: |
+        ### Project task list
+
+        This is the place where the project leader will track the progress of a project using [task lists](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists).
+
+        - [x] First task in the list.
+        - [] Second task in the list.
+        - [ ] And so on and so forth.
