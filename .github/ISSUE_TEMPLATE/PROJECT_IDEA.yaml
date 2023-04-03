@@ -63,7 +63,7 @@ body:
     id: user_project
     attributes:
       label: User project
-      description: [For members of the organization only] Would this project be a good candidate for a user meeting project?
+      description: (For members of the organization only) Would this project be a good candidate for a user meeting project?
       options:
         - 'Yes'
         - 'No'
