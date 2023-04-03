@@ -20,14 +20,14 @@ body:
       value: "description_filled"
     validations:
       required: true
-  - type: dropdown
-    id: compatibility
-    attribtures:
-      label: Compatibility
-      description: Would the changes introduced by the project be backward-compatible?
-        - Yes
-        - No
-    validations:
-      required: true
+  #- type: dropdown
+  #  id: compatibility
+  #  attribtures:
+  #    label: Compatibility
+  #    description: Would the changes introduced by the project be backward-compatible?
+  #      - Yes
+  #      - No
+  #  validations:
+  #    required: true
 
 
