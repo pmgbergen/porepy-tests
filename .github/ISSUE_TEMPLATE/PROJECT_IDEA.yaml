@@ -19,3 +19,10 @@ body:
       placeholder: Brief description of project.
     validations:
       required: false
+  - type: dropdown
+    id: compatibility
+    attribtures:
+      label: Compatibility
+      description: Would the changes introduced by the project be backward compatible?
+        - Yes
+        - No
