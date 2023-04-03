@@ -36,7 +36,7 @@ body:
       description: If you answered No. Please, provide which part(s) of PorePy will break.
     validations:
       required: false
-  - type: dropdwon
+  - type: dropdown
     id: help
     attributes:
       label: Help
@@ -47,3 +47,25 @@ body:
         - I cannot do this project alone, I will need some help.
     validations:
       requrired: true
+  - type: dropdown
+    id: implementation_length
+    attributes:
+      label: Implementation length
+      description: If possible, provide an estimate of the time-span of this project.
+      options:
+        - N/A.
+        - Hours.
+        - Days.
+        - Months.
+    validations:
+      required: false
+  - type: dropdown
+    id: user_project
+    attributes:
+      label: User project
+      description: (For members of the organization only) Would this project be a good candidate for a user meeting project?
+      options:
+        - 'Yes'
+        - 'No'
+    validations:
+      required: false
