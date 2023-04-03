@@ -17,7 +17,7 @@ body:
       label: Description
       description: Plase, provide a brief description of the project.
       placeholder: Brief description of project.
-      value: "description_filled"
+      #value: "description_filled"
     validations:
       required: true
   #- type: dropdown
