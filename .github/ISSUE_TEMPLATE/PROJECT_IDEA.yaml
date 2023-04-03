@@ -16,7 +16,7 @@ body:
     attributes:
       label: Description
       description: Plase, provide a brief description of the project.
-      placeholder: Brief description of project.
+      placeholder: Brief description of the project.
     validations:
       required: true
   - type: dropdown
@@ -27,6 +27,23 @@ body:
       options:
         - 'Yes'
         - 'No'
-        - I don't know
     validations:
       required: true
+  - type: textarea
+    id: backward_incompatible
+    attributes:
+      label: Backward-incompatible
+      description: If you answered No. Please, provide which part(s) of PorePy will break.
+    validations:
+      required: false
+  - type: dropdwon
+    id: help
+    attributes:
+      label: Help
+      description: Please provide the amount of help you will need for this project.
+      options:
+        - I can do it on my own.
+        - I can do it on my own but with the help of a developer.
+        - I cannot do this project alone, I will need some help.
+    validations:
+      requrired: true
