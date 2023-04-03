@@ -21,7 +21,7 @@ body:
       required: true
   - type: dropdown
     id: compatibility
-    attribtures:
+    attributes:
       label: Compatibility
       description: Would the changes introduced by the project be backward-compatible?
       options:
