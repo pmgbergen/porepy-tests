@@ -29,7 +29,7 @@ body:
       options:
         - 'Yes'
         - 'No'
-        - Not sure.
+        - Not sure
     validations:
       required: true
   - type: textarea
@@ -42,13 +42,14 @@ body:
   - type: dropdown
     id: help_needed
     attributes:
-      label: Type of user and amount of help
+      label: Amount of help
       description: Please provide the amount of help needed for this project.
       options:
         - I am a user, and I will work on my own.
         - I am a user, and I will need some help.
         - I am a core developer, and I will work on my own.
         - I am a core developer, and I will need some help.
+        - I will not be part of this project.
     validations:
       requrired: true
   - type: dropdown
@@ -57,9 +58,9 @@ body:
       label: Implementation effort
       description: If possible, provide an estimate of the time-span of this project.
       options:
-        - Hours.
-        - Days.
-        - Months.
+        - Hours
+        - Days
+        - Months
     validations:
       required: false
   - type: dropdown
@@ -75,8 +76,8 @@ body:
   - type: textarea
     id: taks_lists
     attributes:
-      label: Use task lists to keep track the project progress
-      description: Write the task list (you may edit it later).
+      label: Project progress
+      description: Use task lists to keep track of the project (you may edit it later).
       placeholder: '- [x] My first task'
     validations:
       required: true
