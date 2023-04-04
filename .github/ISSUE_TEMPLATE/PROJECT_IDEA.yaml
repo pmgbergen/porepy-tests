@@ -10,7 +10,7 @@ body:
 
         Before creating a new project, please make sure that you are not creating a duplicate of another project. To do so, go to [Issues](https://github.com/pmgbergen/porepy/issues) and filter the issues using the tag `project-backlog`.
 
-        If relevant, set asignees, labels, projects, and milestones on the right.
+        If relevant, set assignees, labels, projects, and milestones on the right.
 
         We kindly ask you to fill out the following fields to create your new project idea.
   - type: textarea
@@ -51,7 +51,7 @@ body:
         - I am a core developer, and I will need some help.
         - I will not be part of this project.
     validations:
-      requrired: true
+      required: true
   - type: dropdown
     id: implementation_length
     attributes:
@@ -74,10 +74,11 @@ body:
     validations:
       required: false
   - type: textarea
-    id: taks_lists
+    id: task_lists
     attributes:
       label: Project progress
       description: Use task lists to keep track of the project (you may edit it later).
       placeholder: '- [x] My first task'
+      value: '- [x] My first task'
     validations:
       required: true
