@@ -24,7 +24,7 @@ body:
   - type: dropdown
     id: compatibility
     attributes:
-      label: Is backward compatible?
+      label: Is backward-compatible?
       description: Would the changes introduced by this project be backward-compatible with PorePy?
       options:
         - 'Yes'
