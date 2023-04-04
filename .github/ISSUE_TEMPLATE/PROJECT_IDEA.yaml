@@ -81,6 +81,7 @@ body:
       placeholder: '- [x] My first task'
       value: '
         - [x] My first task.
+        
         - [ ] My second task.
         '
     validations:
