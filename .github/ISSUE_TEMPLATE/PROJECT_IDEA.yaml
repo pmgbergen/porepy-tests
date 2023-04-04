@@ -79,6 +79,9 @@ body:
       label: Project progress
       description: Use task lists to keep track of the project (you may edit it later).
       placeholder: '- [x] My first task'
-      value: '- [x] My first task. &nbsp; - [ ] My second task.'
+      value: '
+        - [x] My first task.
+        - [ ] My second task.
+        '
     validations:
       required: true
