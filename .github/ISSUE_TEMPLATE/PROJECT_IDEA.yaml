@@ -1,7 +1,7 @@
-name: Project
+name: Project Idea
 description: Create an issue containing a new project idea
-title: "[Project]: "
-labels: ["project-backlog", "help-wanted"]
+title: "[Project Idea]: "
+labels: ["projects-backlog"]
 body:
   - type: markdown
     attributes:
@@ -46,10 +46,10 @@ body:
       description: Please provide the amount of help needed for this project.
       options:
         - I am a user, and I will work on my own.
-        - I am a user, and I will need some help.
+        - I am a user, and I will like some help.
         - I am a core developer, and I will work on my own.
-        - I am a core developer, and I will need some help.
-        - I will not be part of this project.
+        - I am a core developer, and I will like some help.
+        - I will not take part of this project.
     validations:
       required: true
   - type: dropdown
