@@ -1,6 +1,6 @@
-import porepy as pp
-import pytest
-import numpy as np
+#import porepy as pp
+#import pytest
+#import numpy as np
 
 class TestDummy:
     """Create some dummy test"""

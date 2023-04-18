@@ -1,7 +1,8 @@
-import porepy as pp
+#import porepy as pp
 import pytest
-import numpy as np
+#import numpy as np
 
+@pytest.mark.skipped
 class TestDummier:
     """Create some dummier tests"""
 
