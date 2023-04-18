@@ -72,5 +72,6 @@ jobs:
       if: ${{always()}}
       run: |
         cd tests/
-        pytest
+        pytest --run-skipped
+
 
