@@ -51,6 +51,7 @@ jobs:
         git clone https://github.com/pmgbergen/porepy
         cd porepy
         pip install -r requirements-dev.txt
+        pip install pypardiso
         pip install .
         pip freeze
 
